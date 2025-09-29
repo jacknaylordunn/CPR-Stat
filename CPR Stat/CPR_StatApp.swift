@@ -11,7 +11,9 @@ import SwiftUI
 struct CPR_StatApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            // This now correctly points to the PhoneView we created,
+            // instead of the default 'ContentView'.
+            PhoneView()
         }
     }
 }
