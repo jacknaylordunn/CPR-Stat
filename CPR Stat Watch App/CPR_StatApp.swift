@@ -8,10 +8,12 @@
 import SwiftUI
 
 @main
-struct CPR_Stat_Watch_AppApp: App {
+struct CPR_Stat_Watch_App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            // This now correctly points to the WatchView we created,
+            // instead of the default 'ContentView'.
+            WatchView()
         }
     }
 }
